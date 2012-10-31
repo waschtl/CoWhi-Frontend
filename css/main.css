@@ -1,0 +1,155 @@
+/*
+ * meine css-Regeln... todo
+ */
+
+ 
+/**
+ * Angaben für den Body
+ **/
+body
+  {
+  font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+  font-size: 84%;
+  background-color:#CCD9E2
+  }
+
+a:link { font-weight:normal; color:blue; text-decoration:none; }
+a:visited { font-weight:normal; color:blue; text-decoration:none; }
+a:focus { font-weight:normal; color:red; text-decoration:underline; }
+a:hover { font-weight:normal; color:green; text-decoration:none; }
+a:active { font-weight:normal; color:lime; text-decoration:underline; }
+
+
+/**
+ * IBox mit Rand um das gesamte Layout:
+ * quelle: http://www.cssplay.co.uk/boxes/snazzy.html
+ **/
+.outer_layout {background: transparent; margin:0em; width: 100%}
+.outer_layout .xtop, .outer_layout .xbottom {display:block; background:transparent; font-size:1px;}
+.outer_layout .xb1, .outer_layout .xb2, .outer_layout .xb3, .outer_layout .xb4 {display:block; overflow:hidden;}
+.outer_layout .xb1, .outer_layout .xb2, .outer_layout .xb3 {height:1px;}
+.outer_layout .xb2, .outer_layout .xb3, .outer_layout .xb4 {background:#F7F7F7; border-left:1px solid #4180F3; border-right:1px solid #4180F3;}
+.outer_layout .xb1 {margin:0 5px; background:#4180F3;}
+.outer_layout .xb2 {margin:0 3px; border-width:0 2px;}
+.outer_layout .xb3 {margin:0 2px;}
+.outer_layout .xb4 {height:2px; margin:0 1px;}
+.outer_layout .xboxcontent {display:block; background:#F7F7F7; border:0 solid #4180F3; border-width:0 1px; padding:0.5em}
+
+
+/**
+ *  Logo im Head einbinden und positionieren
+ **/
+.outer_layout .logo_top{
+  background-image: url(../images/logo_top.jpg);
+  height:120px;
+  width:950px
+  background-position:center top;
+  background-repeat:no-repeat;
+  padding-top:10px;
+  padding-bottom:10px;
+  }
+
+
+/**
+ *  footer
+ **/
+.outer_layout .footer
+{
+  border-top:1px solid #ffffff;
+  clear:both;
+  text-align: center
+}
+
+/**
+ *  Content
+ **/
+ .outer_layout .Inhalt
+{
+  margin-left: 10em;
+  padding: 1em;
+  border-left:1px solid #ffffff;
+}
+
+
+/**
+ *  Navigationsmenü auf linker Seite
+ **/
+.outer_layout .Navigation
+{
+  font-size: 0.89em;
+  float: left;
+  width: 10em;
+  padding-left: 0.5em;
+}
+.outer_layout .Navigation .Bezeichner
+{
+  list-style: none;
+  color:#000000;
+  font-size: 1.0em;
+  text-align: left;
+  font-weight: bold;
+  margin: 0; padding: 0;
+}
+.outer_layout .Navigation .ListItem
+{
+  list-style: none;
+  margin: 0; padding: 0.2em;
+  padding-left: 1.5em
+}
+.outer_layout .Navigation a
+{
+  display: block;
+  padding: 0.1em;
+  text-decoration: None
+}
+.outer_layout .Navigation a:link {color: black; background-color: #F7F7F7;}
+.outer_layout .Navigation a:visited {color: black; background-color: #F7F7F7;}
+.outer_layout .Navigation a:hover {color: black; background-color: white;}
+.outer_layout .Navigation a:active {color: white; background-color: F7F7F7;}
+
+
+/**
+ * Infobox Beispiel
+ * quelle: http://www.cssplay.co.uk/boxes/snazzy.html
+ **/
+.infobox1 {background: transparent; margin:1em; width: 60%}
+.infobox1 .xtop, .infobox1 .xbottom {display:block; background:transparent; font-size:1px;}
+.infobox1 .xb1, .infobox1 .xb2, .infobox1 .xb3, .infobox1 .xb4 {display:block; overflow:hidden;}
+.infobox1 .xb1, .infobox1 .xb2, .infobox1 .xb3 {height:1px;}
+.infobox1 .xb2, .infobox1 .xb3, .infobox1 .xb4 {background:#D8EFF7; border-left:1px solid #0FB8F0; border-right:1px solid #0FB8F0;}
+.infobox1 .xb1 {margin:0 5px; background:#0FB8F0;}
+.infobox1 .xb2 {margin:0 3px; border-width:0 2px;}
+.infobox1 .xb3 {margin:0 2px;}
+.infobox1 .xb4 {height:2px; margin:0 1px;}
+.infobox1 .xboxcontent {padding: 0.5em; display:block; text-align: left; background:#D8EFF7; border:0 solid #0FB8F0; border-width:0 1px;}
+
+
+
+/**
+ * Darstellungen in Feldern
+ **/
+
+/* Darstellen von Temperaturwerten inTexteingabefeld*/
+.outer_layout .temperature
+{
+  color:#000000;
+  font-size:14px;
+  border: 1px solid #C7AEE1;
+  background-color: #ffffff;
+  width:60px;
+  height:24px;
+}
+
+/* Texteingabefeld für Zeichen */
+.outer_layout .inputfield
+{
+  color:#000000;
+  font-size:12px;
+  border: 1px solid #C7AEE1;
+  background-color: #ffffff;
+  width:150px;
+  height:24px;
+}
+
+
+
